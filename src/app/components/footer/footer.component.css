@@ -1,0 +1,12 @@
+footer{
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+footer span{
+    font-size: 14px;
+    color: #720dad;
+}

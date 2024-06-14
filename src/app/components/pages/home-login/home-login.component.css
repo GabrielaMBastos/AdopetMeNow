@@ -1,0 +1,206 @@
+.home-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home-container-cards{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    gap:20px;
+}
+
+.card{
+  --hover: 0;
+  cursor: pointer;
+}
+
+.card:hover {
+    --hover: 1;
+}
+
+  figure {
+    width: 520px;
+    aspect-ratio: 8 / 5;
+    --bg: hsl(330 80% calc(90% - (var(--hover) * 10%)));
+    --accent: hsl(280 80% 40%);
+    transition: 0.2s;
+    background:
+      radial-gradient(circle at top left, var(--accent), transparent 75%),
+      var(--bg);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .card-img-dog{
+    position: relative;
+    right: 7%;
+    top: 18%;
+    width: 85%;
+    background: transparent;
+    transform:
+    translateX(calc(var(--hover) * +5%))
+    translateY(calc(var(--hover) * -5%))
+    scale(calc(1 + (var(--hover) * 0.1)));
+    transition: 0.2s;
+  }
+
+  .card-img-cat{
+    position: relative;
+    right: 10%;
+    top: 17%;
+    width: 80%;
+    background: transparent;
+    transform:
+    translateX(calc(var(--hover) * +5%))
+    translateY(calc(var(--hover) * -5%))
+    scale(calc(1 + (var(--hover) * 0.1)));
+    transition: 0.2s;
+  }
+
+  .card-img-anuncios{
+    position: relative;
+    top: 15%;
+    width: 65%;
+    background: transparent;
+    transform:
+    translateY(calc(var(--hover) * -5%))
+    scale(calc(1 + (var(--hover) * 0.1)));
+    transition: 0.2s;
+  }
+
+  .carousel{
+    width: 100%;
+  }
+
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 65px;
+    width: 100%;
+    padding: 40px 0 80px 0 ;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #69118b;
+    margin-bottom: 80px;
+  }
+
+  .carousel-text{
+    text-align: left;
+    margin-left: 150px;
+    background-color: #69118b;
+  }
+  
+  .carousel-title {
+    font-size: 32px;
+    color: #DBD8D8;
+    background-color: #69118b;
+  }
+
+  .carousel-p{
+    color: #DBD8D8;
+    background-color: #69118b;
+  }
+
+  .carousel-cards {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    background-color: #69118b;
+
+  }
+  
+   .carousel-cards-items {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #95bcd6;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: 1000ms all;
+    transition: 1000ms all;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    position: relative;
+  }
+  
+  .carousel-cards-items:hover ~ .carousel-cards-items {
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+  
+  .carousel-cards:hover .carousel-cards-items {
+    opacity: 0.3;
+    height: 250px;
+    width: 250px;
+    
+  }
+  
+  .carousel-cards:hover .carousel-cards-items:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 1;
+    margin-right: 20px;
+  }
+  
+  .carousel-cards-items-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .carousel-cards-items-img:hover {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .carousel-cards-items-text {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    opacity: 0;
+    -webkit-transition: 450ms opacity;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+  }
+  
+  .carousel-cards-items-text:hover {
+    opacity: 1;
+  }
+  
+ 
+
+  .carousel-cards-items-text-subtitle{
+    display: flex;
+    text-align: left;
+    font-size: 12px;
+    background-color: transparent;
+    color: #DBD8D8;
+  }
+  
+  .carousel-cards-items-text-title{
+    font-size: 16px;
+    display: flex;
+    text-align: left;
+    background-color: transparent;
+    color: #DBD8D8;
+  }

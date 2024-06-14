@@ -1,0 +1,36 @@
+
+nav{
+    margin: 16px 80px 0 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-logo a img{
+    width: 270px;
+    cursor: pointer;
+}
+
+.nav-menu, .nav-login{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    margin-left: 19px;
+}
+
+.nav-menu-link{
+    font-size: 24px;
+}
+
+.nav-login-button{
+    font-size: 24px;
+    color: #DBD8D8;
+    border: 1px solid #6b139e;
+    border-radius: 10px;
+    background-color: #69118b;
+    padding: 8px 16px;
+}

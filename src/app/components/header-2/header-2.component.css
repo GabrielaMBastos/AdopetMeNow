@@ -1,0 +1,26 @@
+nav{
+    margin: 16px 80px 0 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-logo a img{
+    width: 270px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    cursor: pointer;
+    margin-right: 200px;
+}
+
+.nav-menu-link{
+    font-size: 24px;
+}
+
+.nav-meuUsuario a img{
+    width: 65px;
+}
